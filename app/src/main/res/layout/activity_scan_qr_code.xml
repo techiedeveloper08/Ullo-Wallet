@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.scan_qr_code.ScanQrCodeActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ullo.ui.scan_qr_code.ScanQrCodeViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/scannerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:borderColor="@color/white"
+            app:laserEnabled="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:paddingTop="@dimen/_18sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_4sdp"
+                    android:onClick="@{()->viewModel.onCloseButtonClick()}"
+                    android:src="@drawable/ic_close" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvMessage"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="@string/scan_qr_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:textAllCaps="true" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/use_your_camera_to_scan_the_qr_code_on_the_bike_to_unlock_it"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1">
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.36">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_4sdp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:text="Or"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12ssp"
+                        app:textAllCaps="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:text="Mobile No."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/etCountryCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:hint="+91"
+                            android:inputType="phone"
+                            android:maxLength="4"
+                            app:ccp_showFlag="false"
+                            app:ccp_showFullName="false"
+                            app:ccp_showPhoneCode="true"
+                            app:ccp_showNameCode="false"
+                            app:ccp_textSize="@dimen/_12ssp" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="#979797" />
+
+                        <EditText
+                            android:id="@+id/etMobileNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_blue_circle"
+                            android:background="@android:color/transparent"                            android:drawableRight="@drawable/right_arrow_with_bg"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:hint="Mobile No."
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:inputType="phone"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:background="#979797" />
+
+                    <TextView
+                        android:id="@+id/tIMobileNo"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnEnterCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_26sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_26sdp"
+                        android:layout_marginBottom="@dimen/_14ssp"
+                        android:background="@drawable/login_button_gradient"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="Send"
+                        android:textSize="@dimen/_14ssp"
+                        android:onClick="@{()->viewModel.onSendButtonClick()}"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/joyride_support"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/tvSupport"
+                    app:layout_constraintStart_toStartOf="@+id/tvSupport"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSupport" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

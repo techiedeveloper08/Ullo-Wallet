@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:text="ullo"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_66sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tutorial_one" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Welcome on CIB Wallet"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="italic"
+            android:paddingLeft="@dimen/_22sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_22sdp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="Plan your finance any time, any where"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

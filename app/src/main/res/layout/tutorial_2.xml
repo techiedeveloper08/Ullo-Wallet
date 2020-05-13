@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:text="ullo"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_66sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:src="@drawable/tutorial_two" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:text="One touch and send money"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="@font/quicksand_regular"
+            android:textStyle="italic"
+            android:paddingLeft="@dimen/_22sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_22sdp"
+            android:layout_marginTop="9dp"
+            android:text="send money to every one by on step\nand organize your wallet easier."
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/quicksand_regular"
+            android:textSize="@dimen/_14ssp"
+            android:paddingLeft="@dimen/_22sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

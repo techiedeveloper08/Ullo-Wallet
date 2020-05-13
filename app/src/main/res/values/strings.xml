@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">Ullo</string>
+
+    <string name="please_check_your_internet_connection_or_try_again_later">Please check your internet connection or try
+        again later
+    </string>
+    <string name="landing_register">Register</string>
+    <string name="landing_login">Login</string>
+    <string name="landing_contact">Contact</string>
+    <string name="landing_help_faq">Help/FAQ</string>
+    <string name="landing_are_you_already_registered_with_lindera">Are you already registered with Lindera?</string>
+    <string name="enter_your_email_and_password">Axcepteur they are not excepteur ocdatat effeminate and their spirits.</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="login_CTA">Login</string>
+    <string name="register_for_free_at_lindera">Register now for free at Lindera</string>
+    <string name="registration_CTA">Registration</string>
+    <string name="contact_lindera_CTA">Contact Lindera</string>
+    <string name="user_name">User name</string>
+
+    <!--dashboard-->
+    <string name="dashboard_title">CARE CENTER "AN DER ELBE" GMBH</string>
+    <string name="dashboard_last_analyzes">Last analysis</string>
+    <string name="dashboard_date">August 2018</string>
+    <string name="dashboard_name">Martina Rheinsberg</string>
+    <string name="dashboard_status">Status</string>
+    <string name="dashboard_repeat">Repeat Analysis</string>
+    <string name="dashboard_offline">(Offline)</string>
+    <string name="dashboard_text">Analysis Completed</string>
+    <string name="dashboard_text1">Analysis in progress</string>
+    <string name="dashboard_notification">0</string>
+    <string name="dashboard_notification1">0</string>
+    <string name="dashboard_progress_name">Sturzgrad</string>
+    <string name="dashboard_progress_date"><![CDATA[Last Analysis: <font color="#000000"><b>%1$s</b></font>]]></string>
+    <string name="dashboard_progress_status1"><![CDATA[Status: <font color="#000000"><b>%1$s</b></font>]]></string>
+    <string name="dashboard_progress_status2"><![CDATA[<font color="#FFFFFF">Status:</font><font color="#000000"><b> %1$s</b></font>]]></string>
+    <string name="dashboard_repeat_analysis">Repeat analysis</string>
+    <string name="dashboard_load_more">Load more</string>
+    <string name="dashboard_how_to_record">How do I take\nAnalysis on?</string>
+    <string name="dashboard_services">Except blinds are not cupidatat I\nexcept, they abandon their responsibilities are to blame\nsoft minds.</string>
+    <string name="dashboard_start">Start analysis</string>
+    <string name="dashboard_nursing_home">Nursing home Berlin</string>
+    <string name="dashboard_start_new_analysis">Start new analysis</string>
+    <string name="dashboard_new_analysis">Select a contact\nand start new analysis</string>
+    <string name="dashboard_search">Search</string>
+
+    <!--setting-->
+    <string name="settings_name">Mark Schneider</string>
+    <string name="settings_post">Nurse</string>
+    <string name="settings_institute">Hesena, Institution Berlin</string>
+    <string name="settings_facility">Facility</string>
+    <string name="settings_record">How do I record analysis?</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_delete_account">Deleting an account</string>
+    <string name="settings_feedback">Feedback</string>
+    <string name="settings_contact">Contact Lindera</string>
+    <string name="settings_help">Help/FAQ</string>
+    <string name="settings_terms">Terms of Use</string>
+    <string name="settings_privacy">Privacy Policy</string>
+    <string name="settings_contact_us">Imprint</string>
+    <string name="settings_log_out">Logout</string>
+
+    <!--analysis-->
+    <string name="analysis_process_date">Date:</string>
+    <string name="analysis_process_date1"><font color='#000000'><b> 22.08.2018</b></font></string>
+    <string name="analysis_process_status">Status:</string>
+    <string name="analysis_process_status1"><font color='#000000'><b> Questionnaire not complete</b></font></string>
+    <string name="analysis_process_video_status">Status:</string>
+    <string name="analysis_process_video_status1"><font color='#000000'><b> Video not recorded</b></font></string>
+    <string name="analysis_process_complete">To complete</string>
+    <string name="analysis_upload_all">Upload all</string>
+    <string name="analysis_upload_status1"><font color='#000000'><b> Completed</b></font></string>
+    <string name="analysis_upload_will_be_uploaded">Will be uploaded</string>
+    <string name="analysis_upload_error">Error uploading</string>
+    <string name="analysis_upload_try_again">Try again</string>
+    <string name="analysis_upload">Upload</string>
+    <string name="analysis_archive_date">22.06.2018 13:44</string>
+
+    <!--Profile-->
+    <string name="profile_change_picture">Change Profile Picture</string>
+    <string name="profile_title">Title</string>
+    <string name="profile_first_name">Firstname</string>
+    <string name="profile_surname">Surname</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_email">E-Mail</string>
+
+    <!--Facility-->
+    <string name="facility_to_change">Change</string>
+    <string name="facility_company">Company Name (Commercial Register)</string>
+    <string name="facility_street">Street</string>
+    <string name="facility_house_number">House Number</string>
+    <string name="facility_postcode">Postcode</string>
+    <string name="facility_city">City</string>
+    <string name="facility_email">Contact E-Mail</string>
+    <string name="facility_phone">Phone</string>
+    <string name="facility_address">Billing Address</string>
+    <string name="facility_save">Save</string>
+
+    <!--create contact-->
+    <string name="create_patient_profile_picture">Change Profile Picture</string>
+    <string name="create_patient_name">Name</string>
+    <string name="create_patient_alter">Age</string>
+    <string name="create_patient_gender">Gender:</string>
+    <string name="create_patient_wohnform">Wohnform</string>
+    <string name="create_patient_hospital">Nursing Home Berlin</string>
+    <string name="create_patient_delete">Delete</string>
+
+    <string-array name="hospital">
+        <item>Nursing Home Berlin</item>
+        <item>Nursing Home Berlin</item>
+        <item>Nursing Home Berlin</item>
+    </string-array>
+
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+
+    <string-array name="gender">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+
+    <string-array name="living_condition">
+        <item>Alone in own apartment / house</item>
+        <item>Together with relatives</item>
+        <item>Assisted living</item>
+        <item>In the retirement home</item>
+    </string-array>
+
+    <string-array name="dementia">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="contact_lindera_name">Name</string>
+    <string name="contact_lindera_email">E-Mail</string>
+    <string name="contact_lindera_message">Message</string>
+    <string name="contact_lindera_send">Send</string>
+
+    <!--terms and policy-->
+    <string name="terms_first">Lindera GmbH (<b>"we"</b>) processes your personal data exclusively in accordance with this privacy policy and the relevant statutory provisions, in particular the EU General Data Protection Regulation (<b>"DSGVO"</b>).</string>
+    <string name="terms_second">In this privacy policy you will find information on the processing of your personal data in the retrieval and use of our website www.lindera.de (including all subdomains).</string>
+    <string name="terms_third">Except for the personal data necessary for the technical provision of the website (as described in section C.), we do not collect any personal data through our website.</string>
+    <string name="terms_fourth">On our website you will find some links to third party websites. If you follow these links, please note that websites of third parties also collect personal data from you and may process the data collected differently than we do. Therefore, familiarize yourself as directly as possible with the respective data protection information on the website of the third party.</string>
+    <string name="terms_fifth">In compiling this privacy policy, we have endeavored to make the information as transparent and understandable as possible. If you have any questions or comments, please contact us using the contact options below, for example at <font color='#EA504C'>datenschutz@lindera.de.</font></string>
+    <string name="terms_sixth">The terms used in this privacy policy are based on the definitions of the GDPR. The text of the DSGVO and the German Federal Data Protection Act can be found under the following links:</string>
+    <string name="terms_seventh">General Data Protection Regulation (DSGVO): http://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679 &amp; from=EN Federal Data Protection Act (BDSG) of 30 June 2017: <font color='#EA504C'>http://www.gesetze-im-internet.de/bdsg_2018/</font></string>
+    <string name="terms_eight"><b>Responsible</b>\nResponsible for the processing of your personal data</string>
+    <string name="terms_ninth"><b>Lindera GmbH,</b>\nOranienstraße 185, 10999 Berlin\nTelephone: +49 30 12085482\nMail: <font color='#EA504C'>info@lindera.de</font></string>
+    <string name="terms_tenth">The Lindera GmbH is represented by her\nManaging Director, Mrs. Diana Heinrichs.</string>
+    <string name="terms_eleven">Data Protection Officer\nThe Lindera GmbH has Mr. Mike Peter as Named Data Protection Officer.</string>
+    <string name="terms_twelve">Bochinger Weg 6\n76829 Landau</string>
+    <string name="terms_thirteen">Inquiries to the data protection officer as well as general inquiries about "data protection" should be directed to the following mailbox:\ndatenschutz@lindera.de</string>
+
+    <!--impsum-->
+    <string name="ipsum_first"><b>Imprint:</b></string>
+    <string name="ipsum_second">Information according to § 5 TMG:\nLindera GmbH\nDiana Heinrichs\nOranienstraße 185 c / o Rheingau Founders GmbH\n10999 Berlin </string>
+    <string name="ipsum_third">District Court Charlottenburg (Berlin)\nHRB 190227 B\nVAT ID no. DE 310129466 </string>
+    <string name="ipsum_fourth"><b>Contact:</b></string>
+    <string name="ipsum_fifth">Telephone: 030 12085471\nE-Mail: info@lindera.de </string>
+    <string name="ipsum_sixth"><b>Responsible for the content according to § 55 Abs. 2 RStV:</b></string>
+    <string name="ipsum_seventh">Diana Heinrichs\nOranienstrasse 185 c / o Rheingau Founders GmbH\n10999 Berlin</string>
+
+    <!--Delete Account-->
+    <string name="delete_account_title">Title</string>
+    <string name="delete_account_paragraph">Lorem ipsum dolor sit amet, consetetur sad ipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore mag Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore mag</string>
+    <string name="delete_account_button">Delete Account</string>
+
+    <!--new analysis-->
+    <string name="new_analysis_record_video">Record Video</string>
+    <string name="new_analysis_start_recording">Start Recording</string>
+    <string name="new_analysis_questionnaire">Questionnaire analysis</string>
+    <string name="new_analysis_number">1</string>
+    <string name="new_analysis_number1">2</string>
+    <string name="new_analysis_num1">1.</string>
+    <string name="new_analysis_num2">2.</string>
+    <string name="new_analysis_num3">3.</string>
+    <string name="new_analysis_num4">4.</string>
+    <string name="new_analysis_num5">5.</string>
+    <string name="new_analysis_num6">6.</string>
+    <string name="new_analysis_how_record_video">How do I Record Video?</string>
+    <string name="new_analysis_question">Lorem ipsum dolor sit amet, conset two velocities sadipslore?</string>
+    <string name="new_analysis_answer1">Answer 1</string>
+    <string name="new_analysis_answer2">Answer 2</string>
+    <string name="new_analysis_answer3">Answer 3</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="patient_living_condition">Patient living condition</string>
+    <string name="does_patient_suffer_from_dementia">Does contact suffer from dementia?</string>
+    <string name="edit_patient_title">Patient</string>
+    <string name="edit_patient_edit_title">Edit Patient</string>
+    <string name="patient_edit">Edit</string>
+    <string name="patient_save">Save</string>
+    <string name="find_and_select_your_home">Find and select your home</string>
+    <string name="select_home_title">Select Home</string>
+
+    <!--Ullo Application-->
+    <string name="scan_qa_code">Scan\nQA Code</string>
+    <string name="loading">Loading...</string>
+    <string name="sending_money">Sending Money...</string>
+    <string name="adding_money">Adding Money...</string>
+    <string name="paying_money_to_sophia_fields">Paying money to %1$s\n(%2$s)</string>
+    <string name="scan_qr_code">SCAN QR CODE</string>
+    <string name="use_your_camera_to_scan_the_qr_code_on_the_bike_to_unlock_it">Use your camera to scan the QR code.</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="joyride_support" translatable="false">Ullo Support</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+</resources>

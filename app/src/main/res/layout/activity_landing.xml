@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.landing.LandingActivity">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.ullo.ui.landing.LandingViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_screen_gradient"
+        android:paddingTop="@dimen/_18sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:text="ullo"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_66ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:src="@drawable/tutorial_three" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="Pay/Transfer with wallet App!"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="italic"
+                android:paddingLeft="@dimen/_22sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="organize your your expenses and secure\nyour account by pin code every time\nyou use the app."
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_36sdp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:background="#3B5998"
+                android:onClick="@{()->viewModel.onLoginButtonClick()}"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:background="#0A39F5"
+                android:onClick="@{()->viewModel.onRegisterButtonClick()}"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
